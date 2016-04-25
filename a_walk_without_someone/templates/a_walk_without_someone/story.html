@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatable" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700|Special+Elite' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/story_css.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/bacon.jquery.css' %}" type="text/css">
+
+    <title>A Walk Without Someone</title>
+    </head>
+    <body class="gradualChangeColor">
+        <div class="container tall"></div>
+        <div class="container">
+            <div class="text-center">
+                <div class="scrollme">
+                    <div
+                        class="animateme"
+                        data-when="exit"
+                        data-from="0"
+                        data-easing="linear"
+                        data-to="1"
+                        data-opacity="0"
+                    >
+                        <div class="col-md-1">
+                                <p class="bigbig">
+                                A
+                                </p>
+                        </div>
+                        <div class="col-md-3">
+                                <p class="bigbig">
+                                Walk
+                                </p>
+                        </div>
+                        <div class="col-md-4">
+                                <p class="bigbig">
+                                Without
+                                </p>
+                        </div>
+                        <div class="col-md-4">
+                                <p class="bigbig">
+                                Someone
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container tall"></div>
+        <div class="container tall"></div>
+        <div class="container">
+                <div class="col-md-12">
+                    <div class="pad-me">
+                        <p class="just">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="pad-me">
+                        <p class="just">
+                        We didn't have much in common.&nbsp;&nbsp;Sometimes we would fight because we couldn't agree on what to do.&nbsp;&nbsp;I usually liked to {{ youActivity }} but {{ he_she_they }} would always want to do something else.
+                        </p>
+                    </div>
+                </div>
+     
+        </div>
+        <div class="container tall"></div>
+        <div class="container tall"></div>
+        <div class="container">
+            <div class="text-center">
+                <div class="col-md-12">
+                    <div class="pad-me">
+                        <p class="just">
+                        If our fights got too bad, one of us would say,"Let's go on a walk".&nbsp;&nbsp;Leaving our apartment and frustratedly beating the pavement with our footsteps, our anger would fall from our bodies to the ground like litter and blow with the dust and garbage in the street.&nbsp;&nbsp;Eventually we would grab each other's hand and talk about silly things, our voices and laughter guiding us home.&nbsp;&nbsp;By the time we slid our key into the lock and opened the door, a compromise would be reached.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container tall"></div>
+        <div class="container tall"></div>
+        <div class="container">
+            <div class="text-center">
+                <div class="col-md-12">
+                    <div class="pad-me">
+                        <p class="just">
+                        Today I made two cups of {{ favDrink }}, forgetting it's just me now.&nbsp;&nbsp;When I realized what I did, I lost my appetite and thirst for the rest of the day, and crawled into bed.&nbsp;&nbsp;The two cups of {{ favDrink }} went cold on the counter top.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container tall"></div>
+        <div class="container tall"></div>
+        <div class="container">
+            <div class="text-center">
+                <div class="col-md-12">
+                    <div class="pad-me">
+                        <p  class="just">
+                        I can smell {{ him_her_them }} still on {{ his_her_their }} pillow
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="text-center">
+                <div class="col-md-12">
+                    <div class="pad-me">
+                        <p class="just">
+                        The mornings when I slept in, I would grab {{ his_her_their }} pillow and pretend {{ he_she_they }} was lying next to me.&nbsp;&nbsp;{{ He_She_They }} would come into the room and whisper "{{ youName }}, wake up baby.&nbsp;&nbsp;The day is here."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="text-center">
+                <div class="col-md-12">
+                    <div class="pad-me">
+                        <p  class="just">
+                        Now, when I refuse to rise, there is no one to encourage me to greet the day.&nbsp;&nbsp;My bed is cold and empty and I stay inside my dreams as long as possible so that I don't have to acknowledge that my bed is cold and empty.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container tall"></div>
+        <div class="container tall"></div>
+        <div class="container pad-me">
+            <div class="text-center">
+                <div class="row">
+                    <div class="col-md-12"> 
+                        <button id="song" class="typewriter btn btn-default btn-lg">
+                        <span class="glyphicon glyphicon-music" aria-hidden="true"></span>
+                        Click here
+                        <span class="glyphicon glyphicon-music" aria-hidden="true"></span>
+                        <br>and continue
+                    </button>
+                    </div>
+                    <div class="col-md-12"> 
+                        <audio autoplay="autoplay" id="async-song" data-aload="{% static 'music/its_too_soon_to_know.mp3' %}"></audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container tall"></div>
+        <div class="container tall"></div>
+        <div class="container">
+            <div class="text-center">
+                <div class="col-md-12">
+                    <div class="pad-me">
+                        <p class="just whiteText">
+                        When we watched an evening movie together, {{ he_she_they }} would gently {{ passFavTouch }}, lulling me to sleep.&nbsp;&nbsp;If {{ he_she_they }} noticed my eyes had closed, {{ he_she_they }} would stop the film so I wouldn't miss a thing.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container tall"></div>
+        <div class="container tall"></div>
+        <div class="container">
+            <div class="text-center">
+                <div class="col-md-12">
+                    <div class="pad-me">
+                        <p class="just whiteText">
+                        I can still feel {{ him_her_them }} in my arms, smell {{ his_her_their }} sweat, see the smile on {{ his_her_their }} face fade as {{ his_her_their }} breathing slowed and {{ his_her_their }} heart stopped.&nbsp;&nbsp;I remember staring into {{ his_her_their }} eyes as tears fell down my face.&nbsp;&nbsp;"{{ loverName }}", I screamed, shaking {{ him_her_them }}, hoping {{ he_she_they }} would come back to me.&nbsp;&nbsp;{{ He_She_They }} stared but wouldn't blink.&nbsp;&nbsp;{{ He_She_They }} wouldn't move.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container tall"></div>
+        <div class="container tall"></div>
+        <div class="container tall"></div>
+        <div class="container tall"></div>
+        <div class="container">
+            <div class="text-center">
+                <div class="col-md-12">
+                    <div class="pad-me">
+                        <p class="just whiteText">
+                        Now I walk through the streets of {{ youCity }} and the frustration and anger does not leave my body.&nbsp;&nbsp;Dust and garbage swirls around me.&nbsp;&nbsp;I lose my way and have no one to guide me home.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container tall"></div>
+        <div class="container pad-me">
+            <div class="text-center">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button id="video" class="btn btn-default btn-lg typewriter">
+                            Walk by your lonesome.
+                        </button>
+                    </div>
+                    <div class="col-md-12"> 
+                        <div class="videoWrapper">
+                            <iframe id="async-video" width="1280" height="720" data-aload="https://www.youtube.com/embed/1nzprGuu12Y?start=12&amp;controls=0&amp;showinfo=0;autoplay=1;" frameborder="0" allowfullscreen ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container pad-me">
+                <div class="text-center">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+        <script type="text/javascript" src="{% static 'jquery-1.11.2.js' %}"></script>
+        <script type="text/javascript" src="{% static 'story.js' %}"></script>
+        <script type="text/javascript" src="{% static 'jquery.scrollme.js' %}"></script>
+        <script type="text/javascript" src="{% static 'bacon.jquery.js' %}"></script>
+
+
+    </body>
+</html>

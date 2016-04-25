@@ -1,0 +1,61 @@
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Special Elite', cursive;
+}
+
+p {
+	font-family: 'Special Elite', cursive;
+	font-size: 300%;
+}
+
+.bigbig {
+	font-size: 80px;
+}
+
+.typewriter {
+	font-family: 'Special Elite', cursive;
+}
+
+.pad-me {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.leafButton {
+	font-size: 70px;
+	width: 120px;
+	height: 120px;
+	padding-top: 15px;
+}
+
+.tall {
+	height: 400px;
+}
+
+.just {
+	text-align: justify;
+}
+
+.gradualChangeColor {
+    background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.9)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.9)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.9)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rtransparent, rgba(0, 0, 0, 0.9)); /* Standard syntax (must be last) */
+}
+
+.whiteText {
+	color: white;
+}

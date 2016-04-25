@@ -1,0 +1,161 @@
+/*BACKGROUND*/
+body, html, main {
+	/* important */
+	height: 100%;
+}
+ 
+.paper_background {
+	/*min-height: 100%;*/
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	/*background-repeat: no-repeat;*/
+	background-position: center center;
+	background-image: url("/static/css/images/paper_background.jpg");
+}
+
+
+/*body {
+	background-color: #f3f8fc;
+}*/
+
+/*PAGE INTRO*/
+
+/*page header and sub-header settings*/
+h1, h2 {
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+}
+
+h1 {
+	font-size: 6em;
+
+}
+
+#welcome_window {
+	padding-top: 200px;
+	padding-bottom: 100px;
+}
+
+
+/*NAVBAR*/
+
+/*hand pointing down*/
+.point_down {
+	font-size: 4em;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 200px;
+
+}
+
+/*navbar color*/
+.footer_color, .glyphicon, .point_down{
+	color: #a93434;
+}
+
+.navbar-fixed-bottom {
+	background-color: white;
+	border-top: solid;
+	border-width: .2em;
+	border-color: #a93434;
+}
+
+/*navbar center and size*/
+.navbar-fixed-bottom {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+/*navbar center and font*/
+.navbar-nav, .navbar-header {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+	text-align: center;
+	font-family: 'Permanent Marker', cursive;
+}
+
+
+/*BODY*/
+
+/*spacing*/
+#about_section {
+	padding-top:100px;
+	padding-bottom: 200px;
+}
+
+#portfolio_section {
+	padding-top:100px;
+	padding-bottom: 200px;
+}
+
+#contact_section {
+	padding-top:100px;
+	padding-bottom: 350px;
+}
+
+.section_headline {
+	padding-bottom: 100px; 
+}
+.body_paragraphs {
+	font-family: 'dosis', sans-serif;
+	font-weight: 500;
+	text-align: justify;
+}
+
+/*ABOUT*/
+
+.pic_of_me {
+	border-radius: 20px;
+}
+
+/*PORTFOLIO*/
+
+.portfolio_text_settings h3 {
+		text-align: center;
+}
+
+/*CONTACT*/
+
+/*icon settings*/
+
+.my_facebook, .my_email, .my_linkedin, .my_github{
+	margin-bottom: 10px;
+	width: 128px;
+	height: 128px;
+	display: block;
+	border-radius: 15px;
+
+}
+
+/*contact regular and hover icons*/
+
+.my_email {
+	background: transparent url("/static/css/images/icon_email.png") center top no-repeat;
+}
+
+.my_facebook {
+	background: transparent url("/static/css/images/icon_facebook.png") center top no-repeat;
+}
+
+.my_linkedin {
+	background: transparent url("/static/css/images/icon_linkedin.png") center top no-repeat;
+}
+
+.my_github {
+	background: transparent url("/static/css/images/icon_github.png") center top no-repeat;
+}
+
+/*lighten up the black image to grey*/
+.my_facebook, .my_linkedin, .my_email, .my_github {
+	background-color: #2c3339;
+	background-blend-mode: color-dodge;
+}
+
+.my_facebook:hover, .my_linkedin:hover, .my_email:hover, .my_github:hover  {
+	background-color: #a93434;
+	background-blend-mode: color-dodge;  /*this allows the color to change on hoover*/
+}
+
+
+

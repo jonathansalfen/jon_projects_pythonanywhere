@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatable" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+        <!-- <link rel="stylesheet" href="{% static 'css/blog.css' %}"> -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/extra_css.css' %}" type="text/css">
+        <title>Jonathan Leslie Salfen</title>
+    </head>
+    <body>
+        <div class="full">
+            {% block content %}
+            {% endblock %}
+            <div class="my-body">
+                <div class="container">
+                    <div class="text-center">
+                        <div class="col-md-12">
+                            <div class="pad-me">
+                                <div class="background-button">
+                                    <a href="{% url 'about' %}" class="word-button"><span>about</span></a>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="pad-me">
+                                <div class="background-button">
+                                    <a href="{% url 'portfolio' %}" class="word-button"><span>portfolio</span></a>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="pad-me">
+                                <div class="background-button">
+                                    <a href="{% url 'portfolio' %}" class="word-button"><span>resume</span></a>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="pad-me">
+                                <div class="background-button">
+                                    <a href="{% url 'portfolio' %}" class="word-button"><span>photos</span></a>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="pad-me">
+                                <div class="background-button">
+                                    <a href="{% url 'contact' %}" class="word-button"><span>contact</span></a>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-footer">
+                <div class="container">
+                    <div class="text-center">
+                        <div class="col-md-4">
+                            <a href="mailto: jonathan.salfen@gmail.com" class="foot-words">gmail</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://www.linkedin.com/in/jonathansalfen" class="foot-words">linkedin</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://github.com/jonathansalfen" class="foot-words">github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

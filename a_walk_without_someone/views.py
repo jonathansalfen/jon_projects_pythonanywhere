@@ -3,53 +3,8 @@ from django.utils import timezone
 from .models import Post
 from .forms import PostForm
 
-def index(request):
-    return render(request, 'new_site/index.html')
 
-def post_detail(request, pk):
-    post = get_object_or_404(Post, pk=pk)
-    return render(request, 'blog/post_detail.html', {'post': post})
-
-def post_list(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'blog/post_list.html', {'posts': posts})
-
-def post_new(request):
-    if request.method == "POST":
-        form = PostForm(request.POST)
-        if form.is_valid():
-            post = form.save(commit=False)
-            post.author = request.user
-            post.save()
-            return redirect('blog.views.post_detail', pk=post.pk)
-    else:
-        form = PostForm()
-    return render(request, 'blog/post_edit.html', {'form': form})
-
-def post_edit(request, pk):
-    post = get_object_or_404(Post, pk=pk)
-    if request.method == "POST":
-        form = PostForm(request.POST, instance=post)
-        if form.is_valid():
-            post = form.save(commit=False)
-            post.author = request.user
-            post.save()
-            return redirect('blog.views.post_detail', pk=post.pk)
-    else:
-        form = PostForm(instance=post)
-    return render(request, 'blog/post_edit.html', {'form': form})
-
-def about(request):
-    return render(request, 'old_site/about.html')
-
-def old_index(request):
-    return render(request, 'old_site/old_index.html')
-
-def portfolio(request):
-    return render(request, 'old_site/portfolio.html')
-
-def contact(request):
-    return render(request, 'old_site/contact.html')
+# a walk without someone
 
 def story(request):
     return render(request, 'a_walk_without_someone/story.html')
@@ -129,15 +84,3 @@ def story_intro(request):
       
 #     else:
 #         return render(request, 'a_walk_without_someone/story_intro.html')
-
-
-
-
-
-
-
-
-
-
-
-

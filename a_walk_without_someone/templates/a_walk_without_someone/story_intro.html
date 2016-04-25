@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatable" content="IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700|Special+Elite' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css">
+		<link rel="stylesheet" href="{% static 'css/story_css.css' %}" type="text/css">
+		<script type="text/javascript" src="{% static 'jquery-1.11.2.js' %}"></script>
+		<title>A Walk Without Someone</title>
+	</head>
+	<body>
+		<div class="container pad-me">
+            <div class="text-center">
+				<div class="row">
+					<div class="col-md-4">
+					</div>
+					<div class="col-md-4">
+						<h1>A</h1>
+						<h1>Walk</h1>
+						<h1>Without</h1>
+						<h1>Someone</h1>
+					</div>
+					<div class="col-md-4">
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="container pad-me">
+            <div class="text-center">
+				<div class="row">
+					<div class="col-md-3">
+					</div>
+					<div class="col-md-6">
+						<h4>Please answer the questions below.</h4>
+					</div>
+					<div class="col-md-3">
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<form method="post">
+
+
+			<div class="container pad-me">
+	            <div class="text-center">
+					<div class="row">
+						<div class="col-md-4">
+						</div>
+						<div class="col-md-4">
+							{% csrf_token %}
+							<input type="text" class="form-control typewriter" placeholder="In what city or town do you live?" name="youCity">
+							<input type="text" class="form-control typewriter" placeholder="What does your beloved call you?" name="youName">
+							<input type="text" class="form-control typewriter" placeholder="What do you call your beloved?"  name="loverName">
+							<select class="form-control typewriter" name="youActivity">
+								<option>What is your favorite thing to do?</option>
+								<option>read</option>
+								<option>go to the gym</option>
+								<option>walk around the city</option>
+								<option>go to the coffee shop</option>
+								<option>cook</option>
+								<option>play games</option>
+								<option>hike</option>
+								<option>watch a movie</option>
+								<option>play sports</option>
+								<option>go dancing</option>
+							</select>
+							<select class="form-control typewriter" name="favDrink">
+								<option>Which drink to you prefer?</option>
+								<option>coffee</option>
+								<option>tea</option>
+								<option>hot chocolate</option>
+								<option>cider</option>
+							</select>
+							<select class="form-control typewriter" name="favTouch">
+								<option>Which type of touch do you prefer?</option>
+								<option>Someone rubbing your feet</option>
+								<option>Someone rubbing your back</option>
+								<option>Someone rubbing your head</option>
+								<option>Someone rubbing your belly</option>
+							</select>
+							<select class="form-control typewriter" name="loverGender">
+								<option>Which gender pronoun does your beloved use?</option>
+								<option>He</option>
+								<option>She</option>
+								<option>They</option>
+							</select>
+						</div>
+						<div class="col-md-12 pad-me">
+							<h4>
+								<button type="submit" class="btn btn-default btn-lg typewriter">Click here<br>to experience the story.</button>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>

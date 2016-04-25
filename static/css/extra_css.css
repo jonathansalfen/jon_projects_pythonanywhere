@@ -1,0 +1,218 @@
+/*Basic CSS*/
+
+.pad-me {
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+
+.full {
+	background: url(images/insta2.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.jumbotron {
+    height: 1000px;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 1), transparent); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0, 0, 0, 1), transparent); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0, 0, 0, 1), transparent); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0, 0, 0, 1), transparent); /* Standard syntax (must be last) */
+}
+
+.background-button {
+	align: center;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 400px;
+	background: url(images/instadark.jpg);
+}
+
+.word-button {
+	vertical-align: center;
+	line-height: 200px;
+	color: #1683FD;
+	font-size: 300%;
+	font-family: 'Righteous', cursive;
+	text-shadow: 2px 2px #20feff;
+	font-style: normal;
+}
+
+.my-footer {
+	height: 450px;
+    background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.9)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.9)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.9)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rtransparent, rgba(0, 0, 0, 0.9)); /* Standard syntax (must be last) */
+}
+
+
+
+/*Homepage CSS*/
+
+p.jonathan {
+	font-size: 900%;
+	color: #1683FD;
+	font-family: 'Righteous', cursive;
+	padding-top: 10%;
+	text-shadow: 5px 5px #20feff;
+}
+
+.foot-words {
+	position: relative;
+	top: 200px;
+	color: #1683FD;
+	font-size: 300%;
+	font-family: 'Righteous', cursive;
+	text-shadow: 2px 2px #20feff;
+	font-style: normal;
+}
+
+@media screen and (max-width: 1000px) {
+    p.jonathan {
+        font-size:700%;
+    }
+}
+ 
+@media screen and (max-width: 400px) {
+    p.jonathan {
+        font-size:500%;
+    }
+}
+
+
+
+/*Other Pages CSS*/
+
+.paragraph {
+	font-size: 200%;
+	color: almostblack;
+	font-family: 'Righteous', cursive;
+	padding: 2% 2% 2% 3%;
+	background-color: rgba(225, 239, 240, .5);
+	background-opacity: 80%;
+	border-style: solid;
+	border-width: 10px;
+	border-color: rgba(45, 36, 24, 1);
+	text-align: left;
+}
+
+.app_description {
+	font-size: 100%;
+	color: almostblack;
+	font-family: 'Righteous', cursive;
+	padding: 2% 2% 2% 3%;
+	background-color: rgba(225, 239, 240, .5);
+	background-opacity: 80%;
+	border-style: solid;
+	border-width: 10px;
+	border-color: rgba(45, 36, 24, 1);
+	margin-top: 30%;
+}
+
+p.other-header {
+	font-size: 1500%;
+	color: #1683FD;
+	font-family: 'Righteous', cursive;
+	padding-top: 10%;
+	text-shadow: 5px 5px #20feff;
+}
+
+@media screen and (max-width: 900px) {
+    p.other-header {
+        font-size:1000%;
+    }
+}
+ 
+@media screen and (max-width: 600px) {
+    p.other-header {
+        font-size:500%;
+    }
+}
+
+
+
+/*About Page CSS*/
+
+.about-image {
+	border-style: solid;
+	border-width: 10px;
+	border-color: rgba(45, 36, 24, 1);
+	margin: 0 auto;
+	margin-top: 10%;
+}
+
+
+
+/*Portfolio Page CSS*/
+
+.portfolio-image {
+	border-style: solid;
+	border-width: 10px;
+	border-color: rgba(45, 36, 24, 1);
+	margin: 0 auto;
+	margin-top: 30%;
+}
+
+.app-title {
+	
+}
+
+
+
+/*Blog CSS*/
+
+.page-header {
+    background-color: #4f618f;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #061539;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Righteous', cursive;
+}
+
+.date {
+    float: right;
+    color: #7887ab;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #061539;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h1 a, .post h1 a:visited {
+    color: #7887ab;
+}
+
+.light {
+	background-color: #e5ebfb;
+}

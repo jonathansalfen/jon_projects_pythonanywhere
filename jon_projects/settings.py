@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog'
+    'a_walk_without_someone',
+    'photo_album_app',
 ]
 
 MIDDLEWARE_CLASSES = [
